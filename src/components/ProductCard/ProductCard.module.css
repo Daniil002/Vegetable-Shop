@@ -1,0 +1,67 @@
+.cardContainer {
+  box-sizing: border-box; /* Важно! */
+  overflow: hidden;
+  background-color: #fff;
+  width: 302px;
+  height: 414px;
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 13.5px;
+  border-radius: 24px;
+}
+
+.cardImg {
+  width: 276px;
+  height: 276px;
+  background-color: brown;
+}
+
+.cardTitle {
+  color: rgb(33, 37, 41);
+  font-size: 18px;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.cardCountItems {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardIcon {
+  background-color: rgb(222, 226, 230);
+  color: black;
+  width: 30px;
+  height: 30px;
+}
+
+
+.cardControls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #fff;
+}
+
+.cardPriceButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+}
+
+.cardPrice {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cardAddButton {
+    width: 75%;
+    height: 44px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(59, 148, 78);
+    background-color: rgb(231, 250, 235);
+}
