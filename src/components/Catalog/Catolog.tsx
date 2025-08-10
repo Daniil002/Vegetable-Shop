@@ -1,8 +1,9 @@
-// src/components/ProductGrid/ProductGrid.jsx
+
 import style from "./Catolog.module.css";
 import ProductCard from "../ProductCard/ProductCard";
+import type { Product } from "../../types/product";
 
-const Catalog = ({ products }) => {
+const Catalog = ({ products }: {products: Product[]}) => {
   return (
     <>
       <h1 className={style.catalog}>

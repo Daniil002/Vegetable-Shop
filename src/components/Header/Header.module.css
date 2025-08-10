@@ -2,8 +2,8 @@
     background-color: #fff;
     height: 60px;
     width: 100%;
-    position: sticky; /* Изменено с static на sticky */
-    top: 0; /* Обязательно для sticky */
+    position: sticky; 
+    top: 0; 
     left: 0;
     z-index: 100;
     display: flex;

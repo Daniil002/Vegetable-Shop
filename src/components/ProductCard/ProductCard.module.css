@@ -1,10 +1,9 @@
 .cardContainer {
-  box-sizing: border-box; /* Важно! */
+  box-sizing: border-box; 
   overflow: hidden;
   background-color: #fff;
   width: 302px;
   height: 414px;
-  margin-left: 20px;
   margin-top: 20px;
   padding: 13.5px;
   border-radius: 24px;

@@ -2,10 +2,14 @@ import { useState } from "react";
 import style from "./ProductCard.module.css";
 import { ActionIcon, Button } from "@mantine/core";
 import { BsCart2 } from "react-icons/bs";
+import { useCart } from "../../context/CartContext";
+import type { Product } from "../../types/product";
 
-const ProductCard = ({ product }) => {
-  const { name, price, image } = product;
-  const [count, setCount] = useState(1);
+const ProductCard = ({ product }: { product: Product }) => {
+
+  const { addToCart } = useCart()
+  const { name, price, image, id } = product;
+  const [count, setCount] = useState<number>(1);
 
   const handleDecrease = () => {
     setCount((prev) => Math.max(prev - 1, 0));
@@ -14,6 +18,16 @@ const ProductCard = ({ product }) => {
   const handleIncrease = () => {
     setCount((prev) => prev + 1);
   };
+
+  const handleAddToCart = () => {
+    addToCart({
+      id,
+      name,
+      price,
+      image,
+      quantity: count,
+    })
+  }
 
   return (
     <div className={style.cardContainer}>
@@ -52,6 +66,7 @@ const ProductCard = ({ product }) => {
           size="xs"
           radius="md"
           className={style.cardAddButton}
+          onClick={handleAddToCart}
         >
           Add to Cart <BsCart2 className={style.buttonImg} />
         </Button>

@@ -1,8 +1,8 @@
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* по 4 в ряд */
-  justify-items: center; /* центрируем карточки по горизонтали */
-  margin-right: 20px;
+  grid-template-columns: repeat(4, 1fr); 
+  justify-items: center; 
+
 }
 
 .catalog {
